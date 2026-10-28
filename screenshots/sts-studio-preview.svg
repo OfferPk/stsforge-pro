@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="studioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131d2e" />
+      <stop offset="100%" stop-color="#0b1320" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="540" fill="url(#studioBg)" />
+
+  <!-- Window Header -->
+  <rect x="0" y="0" width="960" height="42" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+  <circle cx="20" cy="21" r="5" fill="#ef4444" />
+  <circle cx="36" cy="21" r="5" fill="#eab308" />
+  <circle cx="52" cy="21" r="5" fill="#22c55e" />
+  <text x="480" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="600">
+    STSForge Pro — CCSDS 855.0-M-1 Glass-Cockpit Subnetwork Diagnostics Studio
+  </text>
+  <rect x="820" y="10" width="125" height="22" rx="4" fill="#065f46" />
+  <text x="882" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#34d399" text-anchor="middle" font-weight="700">100% COMPLIANT</text>
+
+  <!-- Telemetry Bar -->
+  <g transform="translate(24, 56)">
+    <!-- Tile 1 -->
+    <rect x="0" y="0" width="215" height="60" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+    <text x="16" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b" text-transform="uppercase" font-weight="bold">ACTIVE NODES</text>
+    <text x="16" y="48" font-family="monospace" font-size="20" fill="#38bdf8" font-weight="bold">4 ONLINE</text>
+
+    <!-- Tile 2 -->
+    <rect x="230" y="0" width="215" height="60" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+    <text x="246" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b" text-transform="uppercase" font-weight="bold">RTT LATENCY (AVG)</text>
+    <text x="246" y="48" font-family="monospace" font-size="20" fill="#4ade80" font-weight="bold">142 μs</text>
+
+    <!-- Tile 3 -->
+    <rect x="460" y="0" width="215" height="60" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+    <text x="476" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b" text-transform="uppercase" font-weight="bold">BIT ERROR RATE (BER)</text>
+    <text x="476" y="48" font-family="monospace" font-size="20" fill="#facc15" font-weight="bold">0.00e+00</text>
+
+    <!-- Tile 4 -->
+    <rect x="690" y="0" width="220" height="60" rx="6" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+    <text x="706" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#64748b" text-transform="uppercase" font-weight="bold">SOIS AUDIT SCORE</text>
+    <text x="706" y="48" font-family="monospace" font-size="20" fill="#34d399" font-weight="bold">10 / 10 PASS</text>
+  </g>
+
+  <!-- Main Left Column: Control Deck -->
+  <g transform="translate(24, 130)">
+    <rect x="0" y="0" width="280" height="385" rx="8" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+    <text x="16" y="26" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#f8fafc" font-weight="bold">NODE INJECTION PANEL</text>
+    <line x1="16" y1="36" x2="264" y2="36" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Node select field -->
+    <text x="16" y="58" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">TARGET SUBNETWORK NODE</text>
+    <rect x="16" y="66" width="248" height="28" rx="4" fill="#070c14" stroke="#334155" stroke-width="1" />
+    <text x="26" y="84" font-family="monospace" font-size="10" fill="#cbd5e1">0x1A - Mass Memory (SpaceWire)</text>
+
+    <!-- Pattern select field -->
+    <text x="16" y="112" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">TEST DATA PATTERN</text>
+    <rect x="16" y="120" width="248" height="28" rx="4" fill="#070c14" stroke="#334155" stroke-width="1" />
+    <text x="26" y="138" font-family="monospace" font-size="10" fill="#cbd5e1">PRBS-9 LFSR (x⁹ + x⁵ + 1)</text>
+
+    <!-- Channel field -->
+    <text x="16" y="166" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">DIAGNOSTIC TEST CHANNEL</text>
+    <rect x="16" y="174" width="248" height="28" rx="4" fill="#070c14" stroke="#334155" stroke-width="1" />
+    <text x="26" y="192" font-family="monospace" font-size="10" fill="#cbd5e1">14 (Non-Intrusive Test Channel)</text>
+
+    <!-- Action Buttons -->
+    <rect x="16" y="218" width="248" height="32" rx="4" fill="#0284c7" />
+    <text x="140" y="238" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle">DISPATCH TEST.request</text>
+
+    <rect x="16" y="260" width="248" height="32" rx="4" fill="#7c3aed" />
+    <text x="140" y="280" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle">RUN 1K-FRAME BER SWEEP</text>
+
+    <rect x="16" y="302" width="248" height="32" rx="4" fill="#059669" />
+    <text x="140" y="322" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle">EXECUTE NORMATIVE AUDIT</text>
+
+    <!-- Topology Summary -->
+    <rect x="16" y="344" width="248" height="28" rx="4" fill="#0b1320" stroke="#1e293b" />
+    <text x="26" y="362" font-family="monospace" font-size="9" fill="#10b981">● SpW: 0x1A  ● 1553: 0x22  ● CAN: 0x34</text>
+  </g>
+
+  <!-- Right Top: Terminal Output -->
+  <g transform="translate(320, 130)">
+    <rect x="0" y="0" width="616" height="200" rx="8" fill="#050811" stroke="#1e293b" stroke-width="1" />
+    <rect x="0" y="0" width="616" height="28" rx="8" fill="#0b111e" />
+    <text x="16" y="18" font-family="monospace" font-size="10" fill="#64748b">DIAGNOSTIC TEST TELEMETRY CONSOLE</text>
+
+    <g font-family="monospace" font-size="10" fill="#94a3b8">
+      <text x="16" y="48" fill="#38bdf8">[03:56:02.102] STSForge Pro v1.0.0 Engine Ready. Standard: CCSDS 855.0-M-1.</text>
+      <text x="16" y="66" fill="#cbd5e1">[03:56:02.115] --&gt; DISPATCHING TEST.request (Dest=0x1A, Ch=14, Pri=1, Len=32B)</text>
+      <text x="16" y="84" fill="#4ade80">[03:56:02.129] &lt;-- RECV TEST.indication: STATUS=SUCCESS, RTT=142μs, BitErrors=0</text>
+      <text x="16" y="102" fill="#cbd5e1">[03:56:03.001] [STRESS] 1,000-Frame PRBS-9 BER Sweep to Node 0x1A Initiated...</text>
+      <text x="16" y="120" fill="#4ade80">[03:56:03.045] [STRESS COMPLETE] Total Bits=256,000, Errors=0, BER=0.00e+00, Avg RTT=142μs</text>
+      <text x="16" y="138" fill="#cbd5e1">[03:56:04.220] --&gt; DISPATCHING TEST.request (Dest=0xFE, Ch=14, Pri=1, Len=32B)</text>
+      <text x="16" y="156" fill="#f87171">[03:56:04.234] &lt;-- RECV TEST.indication: STATUS=DATA_CORRUPTION, BitErrors=13 (BER=5.08e-02)</text>
+      <text x="16" y="174" fill="#a855f7">[03:56:05.010] [AUDIT] 10/10 Normative Requirements Verified PASS (100.0% Compliant)</text>
+    </g>
+  </g>
+
+  <!-- Right Bottom: Compliance Scorecard -->
+  <g transform="translate(320, 345)">
+    <rect x="0" y="0" width="616" height="170" rx="8" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#f8fafc" font-weight="bold">NORMATIVE COMPLIANCE MATRIX SUMMARY</text>
+    <line x1="16" y1="34" x2="600" y2="34" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Table Header -->
+    <text x="16" y="52" font-family="monospace" font-size="9" fill="#64748b">REQ ID</text>
+    <text x="80" y="52" font-family="monospace" font-size="9" fill="#64748b">CLAUSE</text>
+    <text x="150" y="52" font-family="monospace" font-size="9" fill="#64748b">TITLE &amp; DESCRIPTION</text>
+    <text x="540" y="52" font-family="monospace" font-size="9" fill="#64748b">STATUS</text>
+
+    <!-- Row 1 -->
+    <text x="16" y="74" font-family="monospace" font-size="10" fill="#38bdf8">STS-001</text>
+    <text x="80" y="74" font-family="monospace" font-size="10" fill="#94a3b8">§3.2.2.1</text>
+    <text x="150" y="74" font-family="-apple-system, sans-serif" font-size="10" fill="#cbd5e1">TEST.request primitive parameter validation and dispatch</text>
+    <rect x="540" y="62" width="50" height="18" rx="3" fill="#065f46" />
+    <text x="565" y="75" font-family="monospace" font-size="9" fill="#34d399" text-anchor="middle" font-weight="bold">PASS</text>
+
+    <!-- Row 2 -->
+    <text x="16" y="96" font-family="monospace" font-size="10" fill="#38bdf8">STS-002</text>
+    <text x="80" y="96" font-family="monospace" font-size="10" fill="#94a3b8">§3.2.3.1</text>
+    <text x="150" y="96" font-family="-apple-system, sans-serif" font-size="10" fill="#cbd5e1">TEST.indication delivery with RTT latency and bit error count</text>
+    <rect x="540" y="84" width="50" height="18" rx="3" fill="#065f46" />
+    <text x="565" y="97" font-family="monospace" font-size="9" fill="#34d399" text-anchor="middle" font-weight="bold">PASS</text>
+
+    <!-- Row 3 -->
+    <text x="16" y="118" font-family="monospace" font-size="10" fill="#38bdf8">STS-003</text>
+    <text x="80" y="118" font-family="monospace" font-size="10" fill="#94a3b8">§3.2.4.1</text>
+    <text x="150" y="118" font-family="-apple-system, sans-serif" font-size="10" fill="#cbd5e1">TEST_FAILURE.indication on unreachable node or timeout</text>
+    <rect x="540" y="106" width="50" height="18" rx="3" fill="#065f46" />
+    <text x="565" y="119" font-family="monospace" font-size="9" fill="#34d399" text-anchor="middle" font-weight="bold">PASS</text>
+
+    <!-- Row 4 -->
+    <text x="16" y="140" font-family="monospace" font-size="10" fill="#38bdf8">STS-004</text>
+    <text x="80" y="140" font-family="monospace" font-size="10" fill="#94a3b8">§3.1.3</text>
+    <text x="150" y="140" font-family="-apple-system, sans-serif" font-size="10" fill="#cbd5e1">Diagnostic test channel logical isolation (Channel 14)</text>
+    <rect x="540" y="128" width="50" height="18" rx="3" fill="#065f46" />
+    <text x="565" y="141" font-family="monospace" font-size="9" fill="#34d399" text-anchor="middle" font-weight="bold">PASS</text>
+
+    <!-- Footer Summary -->
+    <text x="16" y="160" font-family="monospace" font-size="9" fill="#64748b">VERIFIED: 10/10 NORMATIVE CHECKS • ZERO DEFECTS DETECTED</text>
+  </g>
+</svg>
